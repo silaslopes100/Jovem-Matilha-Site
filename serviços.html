@@ -320,19 +320,19 @@
       const message = [
         'Olá! Gostaria de falar com a Jovem Matilha.',
         '',
-        'DADOS DO TUTOR',
-        `Nome: ${value('nome-tutor')}`,
-        `WhatsApp: ${value('whatsapp')}`,
-        `E-mail: ${value('email')}`,
+        '*DADOS DO TUTOR*',
+        `*Nome*: ${value('nome-tutor')}`,
+        `*WhatsApp*: ${value('whatsapp')}`,
+        `*E-mail*: ${value('email')}`,
         '',
-        'DADOS DO PET',
-        `Nome: ${value('nome-cao')}`,
-        `Raça: ${value('raca-cao')}`,
-        `Idade: ${value('idade-cao')}`,
+        '*DADOS DO PET*',
+        `*Nome*: ${value('nome-cao')}`,
+        `*Raça*: ${value('raca-cao')}`,
+        `*Idade*: ${value('idade-cao')}`,
         '',
-        'HISTÓRICO / OBSERVAÇÕES',
-        `Serviço de interesse: ${document.getElementById('servico-interesse').selectedOptions[0].text}`,
-        value('historico') || 'Nenhuma observação informada.'
+        '*OBSERVAÇÕES*',
+        `*Serviço de interesse*: ${document.getElementById('servico-interesse').selectedOptions[0].text}`,
+        `*Observações*: ${value('historico') || 'Nenhuma observação informada.'}`
       ].join('\n');
       const whatsappUrl = `https://wa.me/5511997800684?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
