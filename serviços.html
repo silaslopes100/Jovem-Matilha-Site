@@ -206,52 +206,23 @@
                 </div>
               </div>
               <!-- Player de vídeo prático -->
-              <div
-                class="relative rounded-[20px] overflow-hidden border-[3px] border-secondary bg-primary-container h-52">
-                <video aria-label="Vídeo prático de conduta pedagógica" autoplay
-                  class="absolute inset-0 w-full h-full object-cover" controls loop muted playsinline preload="auto"
-                  id="video-conduta-pedagogica" src="assets/video-conduta-pedagogica.mp4"></video>
-                <button aria-label="Reproduzir vídeo prático"
-                  class="absolute inset-0 z-10 flex items-center justify-center bg-primary/40 text-inverse-on-surface font-semibold"
-                  hidden id="video-conduta-play" type="button"></button>
+              <div class="relative w-full rounded-[20px] overflow-hidden shadow-2xl bg-primary"
+                style="outline: 3px solid #738B4D;">
+                <video aria-hidden="true" autoplay
+                  class="w-full h-auto object-cover aspect-[16/10] block"
+                  src="assets/11.mp4" loop muted playsinline
+                  preload="metadata"></video>
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-inverse-on-surface">
+                  <div class="flex flex-col">
+                    <span
+                      class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-container tracking-wider">Campo
+                      Prático</span>
+                    <span class="font-body-sm text-body-sm text-inverse-on-surface font-medium">Coexistência &amp;
+                      Descompressão em Matilha</span>
+                  </div>
+                </div>
               </div>
-              <script>
-                (() => {
-                  const video = document.getElementById('video-conduta-pedagogica');
-                  const playButton = document.getElementById('video-conduta-play');
-                  const showPlaybackMessage = (message) => {
-                    playButton.textContent = message;
-                    playButton.disabled = true;
-                    playButton.hidden = false;
-                  };
-                  const startPlayback = () => {
-                    video.play().then(() => {
-                      playButton.hidden = true;
-                    }).catch((error) => {
-                      if (error.name === 'NotAllowedError') {
-                        playButton.hidden = false;
-                        return;
-                      }
-                      if (error.name === 'NotSupportedError') {
-                        showPlaybackMessage('Abra o site por um servidor local ou endereço HTTPS para reproduzir o vídeo.');
-                        return;
-                      }
-                      console.error('Não foi possível reproduzir o vídeo prático.', error);
-                    });
-                  };
-
-                  video.addEventListener('canplay', startPlayback, { once: true });
-                  video.addEventListener('playing', () => { playButton.hidden = true; });
-                  video.addEventListener('error', () => {
-                    if (video.error && video.error.code === MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED) {
-                      showPlaybackMessage('Abra o site por um servidor local ou endereço HTTPS para reproduzir o vídeo.');
-                      return;
-                    }
-                    console.error('Falha ao carregar o vídeo prático.', video.error);
-                  });
-                  playButton.addEventListener('click', startPlayback);
-                })();
-              </script>
             </div>
             <!-- Conteúdo à Direita -->
             <div class="lg:col-span-6 flex flex-col gap-space-lg">
