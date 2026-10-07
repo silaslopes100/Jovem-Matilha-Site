@@ -1,520 +1,839 @@
-<!DOCTYPE html><html class="scroll-smooth" lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><title>Jovem Matilha · Escola Comportamental de Cães</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,600&amp;family=Libre+Franklin:wght@300;400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}#drawer-toggle:checked~#nav-drawer{transform:translateX(0);pointer-events:auto;}#drawer-toggle:checked~#drawer-overlay{opacity:1;pointer-events:auto;}</style><link rel="stylesheet" href="assets/site.css"><link rel="icon" type="image/x-icon" href="assets/favicon.ico"></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><input class="sr-only" id="drawer-toggle" type="checkbox"><div class="fixed inset-0 bg-primary/70 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-overlay"><label class="absolute inset-0 cursor-pointer" for="drawer-toggle"></label></div><aside class="fixed top-0 right-0 h-full w-80 max-w-full bg-primary-container z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-space-lg text-inverse-on-surface pointer-events-none" id="nav-drawer"><div class="flex flex-col gap-space-lg"><div class="flex items-center justify-between pb-space-md"><div class="flex items-center gap-space-sm"><img alt="Logo oficial da Jovem Matilha" class="h-16 w-20 rounded-lg bg-[#F2F2EB] p-1 object-contain" src="assets/logo-oficial.png"></div><label class="p-space-xs rounded-lg text-inverse-on-surface hover:text-on-secondary transition-colors cursor-pointer" for="drawer-toggle"><span class="material-symbols-outlined text-2xl">close</span></label></div><div class="flex items-center gap-space-xs text-badge-seal font-badge-seal text-tertiary-container tracking-wider"><span class="text-inverse-on-surface">ESTRUTURA &amp; CONDUTA</span></div><nav class="flex flex-col gap-space-sm text-body-md font-body-md" data-active-classes="text-secondary-fixed font-bold pl-2"><a class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="home" href="index.html">Home</a><a class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="servicos" href="serviços.html">Serviços</a><a class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="treinamento" href="treinamento.html">Treinamento Comportamental</a><a class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="curso-vivencia" href="curso.html">Curso Vivência</a><a class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="contato" href="contato.html">Contato Institucional</a></nav></div><div class="flex flex-col gap-space-md pt-space-lg"><a class="w-full text-center py-3 px-space-md rounded-xl bg-secondary text-on-secondary font-label-button text-label-button hover:bg-secondary-container hover:text-on-secondary-container transition-all" data-path="agendar-avaliacao" href="serviços.html#formulario-avaliacao">Agendar Avaliação</a><div class="flex flex-col gap-space-xs"><span class="font-label-eyebrow text-label-eyebrow uppercase text-outline-variant tracking-widest">Comunidade</span><a class="text-body-sm font-body-sm text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="https://instagram.com/jovemmatilha">@jovemmatilha</a><span class="text-body-sm font-body-sm text-outline-variant">contato@jovemmatilha.com.br</span></div></div></aside><header class="fixed top-0 w-full z-40 bg-primary-container/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] text-inverse-on-surface"><div class="h-20 max-w-[1280px] mx-auto px-space-md lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center group" data-path="home" href="index.html"><img alt="Logo oficial da Jovem Matilha" class="h-16 w-20 rounded-lg bg-[#F2F2EB] p-1 object-contain transition-transform group-hover:scale-105" src="assets/logo-oficial.png"></a></div><nav class="hidden md:flex items-center gap-space-lg font-body-md text-body-md" data-active-classes="text-secondary-fixed font-semibold"><a class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="home" href="index.html">Home</a><a class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="servicos" href="serviços.html">Serviços</a><a class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="treinamento" href="treinamento.html">Treinamento</a><a class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="curso-vivencia" href="curso.html">Curso Vivência</a><a class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="contato" href="contato.html">Contato</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md"><a class="hidden sm:inline-flex items-center justify-center rounded-xl bg-secondary text-on-secondary px-6 py-3 font-label-button text-label-button hover:bg-secondary-container hover:text-on-secondary-container transition-all hover:shadow-[0_8px_24px_-4px_rgba(41,49,25,0.15)]" data-path="agendar-avaliacao" href="serviços.html#formulario-avaliacao">Agendar avaliação</a><label aria-label="Abrir Menu de Navegação" class="cursor-pointer p-2 rounded-xl text-inverse-on-surface hover:bg-primary hover:text-on-secondary transition-colors flex items-center justify-center" for="drawer-toggle"><span class="material-symbols-outlined text-2xl">menu</span></label></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
-<!-- HERO SECTION -->
-<section class="w-full bg-primary-container text-inverse-on-surface py-20 px-6 sm:px-10 lg:px-margin border-b border-[#738B4D]/20">
-<div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-<!-- Cartaz estilizado do curso -->
-<div class="lg:col-span-5 flex justify-center">
-<div class="relative w-full max-w-[440px] rounded-[20px] border-[3px] border-[#738B4D] bg-primary p-6 sm:p-8 flex flex-col justify-between overflow-hidden shadow-2xl">
-<!-- Monograma de fundo em marca d'água -->
-<div class="absolute -right-8 -bottom-10 select-none pointer-events-none opacity-5 text-[220px] font-display font-bold text-inverse-on-surface leading-none">
-            M
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="web_standard" name="shell-type">
+  <title>Jovem Matilha · Escola Comportamental de Cães</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,600&amp;family=Libre+Franklin:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet">
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main>:first-child {
+        margin-top: 0 !important;
+      }
+
+      main>:last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    #drawer-toggle:checked~#nav-drawer {
+      transform: translateX(0);
+      pointer-events: auto;
+    }
+
+    #drawer-toggle:checked~#drawer-overlay {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+  <link rel="stylesheet" href="assets/site.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+
+<body
+  class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+  <input class="sr-only" id="drawer-toggle" type="checkbox">
+  <div
+    class="fixed inset-0 bg-primary/70 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"
+    id="drawer-overlay"><label class="absolute inset-0 cursor-pointer" for="drawer-toggle"></label></div>
+  <aside
+    class="fixed top-0 right-0 h-full w-80 max-w-full bg-primary-container z-50 shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-space-lg text-inverse-on-surface pointer-events-none"
+    id="nav-drawer">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center justify-between pb-space-md">
+        <div class="flex items-center gap-space-sm"><img alt="Logo oficial da Jovem Matilha"
+            class="h-16 w-20 rounded-lg bg-[#F2F2EB] p-1 object-contain" src="assets/logo-oficial.png"></div><label
+          class="p-space-xs rounded-lg text-inverse-on-surface hover:text-on-secondary transition-colors cursor-pointer"
+          for="drawer-toggle"><span class="material-symbols-outlined text-2xl">close</span></label>
+      </div>
+      <div
+        class="flex items-center gap-space-xs text-badge-seal font-badge-seal text-tertiary-container tracking-wider">
+        <span class="text-inverse-on-surface">ESTRUTURA &amp; CONDUTA</span></div>
+      <nav class="flex flex-col gap-space-sm text-body-md font-body-md"
+        data-active-classes="text-secondary-fixed font-bold pl-2"><a
+          class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="home"
+          href="index.html">Home</a><a class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors"
+          data-path="servicos" href="serviços.html">Serviços</a><a
+          class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="treinamento"
+          href="treinamento.html">Treinamento Comportamental</a><a
+          class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="curso-vivencia"
+          href="curso.html">Curso Vivência</a><a
+          class="py-2 text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="contato"
+          href="contato.html">Contato Institucional</a></nav>
+    </div>
+    <div class="flex flex-col gap-space-md pt-space-lg"><a
+        class="w-full text-center py-3 px-space-md rounded-xl bg-secondary text-on-secondary font-label-button text-label-button hover:bg-secondary-container hover:text-on-secondary-container transition-all"
+        data-path="agendar-avaliacao" href="serviços.html#formulario-avaliacao">Agendar Avaliação</a>
+      <div class="flex flex-col gap-space-xs"><span
+          class="font-label-eyebrow text-label-eyebrow uppercase text-outline-variant tracking-widest">Comunidade</span><a
+          class="text-body-sm font-body-sm text-inverse-on-surface hover:text-secondary-fixed transition-colors"
+          href="https://instagram.com/jovemmatilha">@jovemmatilha</a><span
+          class="text-body-sm font-body-sm text-outline-variant">contato@jovemmatilha.com.br</span></div>
+    </div>
+  </aside>
+  <header
+    class="fixed top-0 w-full z-40 bg-primary-container/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] text-inverse-on-surface">
+    <div class="h-20 max-w-[1280px] mx-auto px-space-md lg:px-margin flex items-center justify-between gap-space-md">
+      <div class="flex items-center gap-space-md"><a class="flex items-center group" data-path="home"
+          href="index.html"><img alt="Logo oficial da Jovem Matilha"
+            class="h-16 w-20 rounded-lg bg-[#F2F2EB] p-1 object-contain transition-transform group-hover:scale-105"
+            src="assets/logo-oficial.png"></a></div>
+      <nav class="hidden md:flex items-center gap-space-lg font-body-md text-body-md"
+        data-active-classes="text-secondary-fixed font-semibold"><a
+          class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="home"
+          href="index.html">Home</a><a class="text-inverse-on-surface hover:text-secondary-fixed transition-colors"
+          data-path="servicos" href="serviços.html">Serviços</a><a
+          class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="treinamento"
+          href="treinamento.html">Treinamento</a><a
+          class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="curso-vivencia"
+          href="curso.html">Curso Vivência</a><a
+          class="text-inverse-on-surface hover:text-secondary-fixed transition-colors" data-path="contato"
+          href="contato.html">Contato</a></nav>
+      <div class="flex items-center gap-space-sm sm:gap-space-md"><a
+          class="hidden sm:inline-flex items-center justify-center rounded-xl bg-secondary text-on-secondary px-6 py-3 font-label-button text-label-button hover:bg-secondary-container hover:text-on-secondary-container transition-all hover:shadow-[0_8px_24px_-4px_rgba(41,49,25,0.15)]"
+          data-path="agendar-avaliacao" href="serviços.html#formulario-avaliacao">Agendar avaliação</a><label
+          aria-label="Abrir Menu de Navegação"
+          class="cursor-pointer p-2 rounded-xl text-inverse-on-surface hover:bg-primary hover:text-on-secondary transition-colors flex items-center justify-center"
+          for="drawer-toggle"><span class="material-symbols-outlined text-2xl">menu</span></label></div>
+    </div>
+  </header>
+  <main class="w-full pt-20 bg-background min-h-screen">
+    <div class="flex flex-col w-full">
+      <!-- HERO SECTION -->
+      <section
+        class="w-full bg-primary-container text-inverse-on-surface py-20 px-6 sm:px-10 lg:px-margin border-b border-[#738B4D]/20">
+        <div class="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <!-- Cartaz estilizado do curso -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="relative w-full max-w-[440px] rounded-[20px] border-[3px] border-[#738B4D] bg-primary p-6 sm:p-8 flex flex-col justify-between overflow-hidden shadow-2xl">
+              <!-- Monograma de fundo em marca d'água -->
+              <div
+                class="absolute -right-8 -bottom-10 select-none pointer-events-none opacity-5 text-[220px] font-display font-bold text-inverse-on-surface leading-none">
+                M
+              </div>
+              <div class="flex items-center justify-between relative z-10 mb-6">
+                <span
+                  class="font-badge-seal text-badge-seal text-tertiary-container tracking-widest uppercase flex items-center gap-1">
+                  <span>CURSO PRESENCIAL</span>
+                </span>
+                <span
+                  class="bg-secondary/20 text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase px-3 py-1 rounded-full">
+                  Edição Imersiva
+                </span>
+              </div>
+              <!-- Imagem estilizada de cães em matilha -->
+              <div
+                class="relative z-10 w-full aspect-[4/3] rounded-[16px] overflow-hidden border border-[#738B4D]/30 mb-6 bg-surface-container-highest">
+                <img class="w-full h-full object-cover"
+                  data-alt="Matilha harmoniosa de diferentes raças de cães caminhando juntos e focados em um gramado ensolarado e verde, expressando calma, compostura e liderança natural com iluminação dourada e paleta em tons de verde floresta e terra."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCOz5oghYeOWuS3scBNskPgk3aE-ShLUA5OYAXWfb_vbmvb_1RH0O7eahPiYRWg5IBa0tQL-0ItcukKfr-Fw-mTgxFSzALNxqfLrMinM_1dcvlrgzQ_lkxHK8bpU9O8X7lnGijAJCEC8S1hwPzsPCSjH6H4pBl4Pjqsl6Kq6wncXgdyiBc7xZKB1mpy8BBGrdrX7YfO0Fd7_EU1i8hQEHWLRpT-PGVeoS4S5s_W2_BwCTDJd5c8lTtdA">
+              </div>
+              <div class="relative z-10 flex flex-col gap-2">
+                <h2 class="font-headline-lg text-headline-lg text-inverse-on-surface uppercase tracking-tight">
+                  Vivência
+                </h2>
+                <p class="font-body-sm text-body-sm text-inverse-on-surface/80">
+                  Campo Prático &amp; Condicionamento Natural em Matilha
+                </p>
+                <div
+                  class="mt-4 pt-4 border-t border-[#738B4D]/20 flex items-center justify-between text-body-sm font-body-sm text-tertiary-container">
+                  
+                  <span class="text-secondary-fixed font-semibold">Vagas Sob Consulta</span>
+                </div>
+              </div>
+            </div>
           </div>
-<div class="flex items-center justify-between relative z-10 mb-6">
-<span class="font-badge-seal text-badge-seal text-tertiary-container tracking-widest uppercase flex items-center gap-1">
-<span>CURSO PRESENCIAL</span>
-</span>
-<span class="bg-secondary/20 text-secondary-fixed text-label-eyebrow font-label-eyebrow uppercase px-3 py-1 rounded-full">
-              Edição Imersiva
+          <!-- Conteúdo descritivo Hero -->
+          <div class="lg:col-span-7 flex flex-col items-start gap-6">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-tertiary/20 text-tertiary-fixed font-label-eyebrow text-label-eyebrow uppercase tracking-widest">
+              <span class="material-symbols-outlined text-sm">psychology</span>
+              <span>IMERSÃO TEÓRICA E PRÁTICA · VAGAS LIMITADAS</span>
+            </div>
+            <h1 class="font-display text-display text-inverse-on-surface leading-[1.08] tracking-tight">
+              Curso Vivência Jovem Matilha
+            </h1>
+            <p class="font-body-lg text-body-lg text-inverse-on-surface/80 max-w-2xl leading-relaxed">
+              Treinamento intensivo para tutores e profissionais que necessitam compreender a fundo o adestramento
+              natural e o convívio saudável com humanos e outros cães.
+            </p>
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
+              <a class="inline-flex items-center justify-center gap-3 bg-[#738B4D] hover:bg-secondary text-white font-label-button text-label-button font-bold py-4 px-8 rounded-xl shadow-xl transition-all duration-200 text-center"
+                href="#inscricao">
+                <span>Quero me inscrever na próxima turma</span>
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+              </a>
+              <a class="inline-flex items-center justify-center gap-2 border border-[#738B4D] hover:bg-[#738B4D]/15 text-inverse-on-surface font-label-button text-label-button py-4 px-6 rounded-xl transition-all duration-200 text-center"
+                href="#ementa">
+                <span>Ver grade programática</span>
+              </a>
+            </div>
+            <div class="grid grid-cols-3 gap-6 pt-6 border-t border-[#738B4D]/20 w-full max-w-lg">
+              <div>
+                <div class="font-headline-sm text-headline-sm text-secondary-fixed">100%</div>
+                <div class="font-body-sm text-body-sm text-inverse-on-surface/70">Prática e Campo</div>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-secondary-fixed">Direto</div>
+                <div class="font-body-sm text-body-sm text-inverse-on-surface/70">Com Matilha Real</div>
+              </div>
+              <div>
+                <div class="font-headline-sm text-headline-sm text-secondary-fixed">Foco</div>
+                <div class="font-body-sm text-body-sm text-inverse-on-surface/70">Liderança Serena</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- OS TRÊS PILARES DO CURSO -->
+      <section class="w-full bg-surface-container-low py-20 px-6 sm:px-10 lg:px-margin">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-12">
+          <div class="flex flex-col items-center text-center gap-3 max-w-2xl mx-auto">
+            <span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
+              METODOLOGIA APLICADA
             </span>
-</div>
-<!-- Imagem estilizada de cães em matilha -->
-<div class="relative z-10 w-full aspect-[4/3] rounded-[16px] overflow-hidden border border-[#738B4D]/30 mb-6 bg-surface-container-highest">
-<img class="w-full h-full object-cover" data-alt="Matilha harmoniosa de diferentes raças de cães caminhando juntos e focados em um gramado ensolarado e verde, expressando calma, compostura e liderança natural com iluminação dourada e paleta em tons de verde floresta e terra." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCOz5oghYeOWuS3scBNskPgk3aE-ShLUA5OYAXWfb_vbmvb_1RH0O7eahPiYRWg5IBa0tQL-0ItcukKfr-Fw-mTgxFSzALNxqfLrMinM_1dcvlrgzQ_lkxHK8bpU9O8X7lnGijAJCEC8S1hwPzsPCSjH6H4pBl4Pjqsl6Kq6wncXgdyiBc7xZKB1mpy8BBGrdrX7YfO0Fd7_EU1i8hQEHWLRpT-PGVeoS4S5s_W2_BwCTDJd5c8lTtdA">
-</div>
-<div class="relative z-10 flex flex-col gap-2">
-<h2 class="font-headline-lg text-headline-lg text-inverse-on-surface uppercase tracking-tight">
-              Vivência
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Os três pilares da Vivência
             </h2>
-<p class="font-body-sm text-body-sm text-inverse-on-surface/80">
-              Campo Prático &amp; Condicionamento Natural em Matilha
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Uma abordagem sistêmica que une comunicação biológica, autocontrole e rotina funcional para reestruturar
+              condutas caninas.
             </p>
-<div class="mt-4 pt-4 border-t border-[#738B4D]/20 flex items-center justify-between text-body-sm font-body-sm text-tertiary-container">
-<span>ESTD · 2023</span>
-<span class="text-secondary-fixed font-semibold">Vagas Sob Consulta</span>
-</div>
-</div>
-</div>
-</div>
-<!-- Conteúdo descritivo Hero -->
-<div class="lg:col-span-7 flex flex-col items-start gap-6">
-<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-tertiary/20 text-tertiary-fixed font-label-eyebrow text-label-eyebrow uppercase tracking-widest">
-<span class="material-symbols-outlined text-sm">psychology</span>
-<span>IMERSÃO TEÓRICA E PRÁTICA · VAGAS LIMITADAS</span>
-</div>
-<h1 class="font-display text-display text-inverse-on-surface leading-[1.08] tracking-tight">
-          Curso Vivência Jovem Matilha
-        </h1>
-<p class="font-body-lg text-body-lg text-inverse-on-surface/80 max-w-2xl leading-relaxed">
-          Treinamento intensivo para tutores e profissionais que necessitam compreender a fundo o adestramento natural e o convívio saudável com humanos e outros cães.
-        </p>
-<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto pt-2">
-<a class="inline-flex items-center justify-center gap-3 bg-[#738B4D] hover:bg-secondary text-white font-label-button text-label-button font-bold py-4 px-8 rounded-xl shadow-xl transition-all duration-200 text-center" href="#inscricao">
-<span>Quero me inscrever na próxima turma</span>
-<span class="material-symbols-outlined text-lg">arrow_forward</span>
-</a>
-<a class="inline-flex items-center justify-center gap-2 border border-[#738B4D] hover:bg-[#738B4D]/15 text-inverse-on-surface font-label-button text-label-button py-4 px-6 rounded-xl transition-all duration-200 text-center" href="#ementa">
-<span>Ver grade programática</span>
-</a>
-</div>
-<div class="grid grid-cols-3 gap-6 pt-6 border-t border-[#738B4D]/20 w-full max-w-lg">
-<div>
-<div class="font-headline-sm text-headline-sm text-secondary-fixed">100%</div>
-<div class="font-body-sm text-body-sm text-inverse-on-surface/70">Prática e Campo</div>
-</div>
-<div>
-<div class="font-headline-sm text-headline-sm text-secondary-fixed">Direto</div>
-<div class="font-body-sm text-body-sm text-inverse-on-surface/70">Com Matilha Real</div>
-</div>
-<div>
-<div class="font-headline-sm text-headline-sm text-secondary-fixed">Foco</div>
-<div class="font-body-sm text-body-sm text-inverse-on-surface/70">Liderança Serena</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- OS TRÊS PILARES DO CURSO -->
-<section class="w-full bg-surface-container-low py-20 px-6 sm:px-10 lg:px-margin">
-<div class="max-w-[1280px] mx-auto flex flex-col gap-12">
-<div class="flex flex-col items-center text-center gap-3 max-w-2xl mx-auto">
-<span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
-          « METODOLOGIA APLICADA »
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
-          Os três pilares da Vivência
-        </h2>
-<p class="font-body-md text-body-md text-on-surface-variant">
-          Uma abordagem sistêmica que une comunicação biológica, autocontrole e rotina funcional para reestruturar condutas caninas.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Pilar 1 -->
-<div class="bg-surface-container-lowest rounded-[20px] p-8 flex flex-col gap-5 border border-[#8C8A5B]/20 hover:border-[#738B4D] transition-colors duration-200 shadow-sm">
-<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-[#738B4D]">
-<span class="material-symbols-outlined text-3xl">psychology_alt</span>
-</div>
-<span class="font-label-eyebrow text-label-eyebrow text-tertiary uppercase tracking-wider">Pilar 01</span>
-<h3 class="font-headline-md text-headline-md text-primary">
-            Comportamento &amp; Obediência Funcional
-          </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            Como ler os sinais sutis antes da reação indesejada e aplicar limites consistentes com clareza, previsibilidade e firmeza sem violência.
-          </p>
-<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center text-body-sm font-body-sm text-secondary gap-2">
-<span class="material-symbols-outlined text-base">check_circle</span>
-<span>Comunicação postural e microexpressões</span>
-</div>
-</div>
-<!-- Pilar 2 -->
-<div class="bg-surface-container-lowest rounded-[20px] p-8 flex flex-col gap-5 border border-[#8C8A5B]/20 hover:border-[#738B4D] transition-colors duration-200 shadow-sm">
-<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-[#738B4D]">
-<span class="material-symbols-outlined text-3xl">groups_3</span>
-</div>
-<span class="font-label-eyebrow text-label-eyebrow text-tertiary uppercase tracking-wider">Pilar 02</span>
-<h3 class="font-headline-md text-headline-md text-primary">
-            Convívio Real com Outros Cães
-          </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            Dinâmica da matilha sem brigas, moderação de energia e hierarquia natural. O cão aprende a coexistir respeitando o espaço alheio.
-          </p>
-<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center text-body-sm font-body-sm text-secondary gap-2">
-<span class="material-symbols-outlined text-base">check_circle</span>
-<span>Neutralidade e descompressão social</span>
-</div>
-</div>
-<!-- Pilar 3 -->
-<div class="bg-surface-container-lowest rounded-[20px] p-8 flex flex-col gap-5 border border-[#8C8A5B]/20 hover:border-[#738B4D] transition-colors duration-200 shadow-sm">
-<div class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-[#738B4D]">
-<span class="material-symbols-outlined text-3xl">directions_walk</span>
-</div>
-<span class="font-label-eyebrow text-label-eyebrow text-tertiary uppercase tracking-wider">Pilar 03</span>
-<h3 class="font-headline-md text-headline-md text-primary">
-            Socialização Consciente com Humanos
-          </h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-            Segurança no convívio urbano, recepção de visitas em casa e passeios estruturados e tranquilos na rua sem puxões ou reatividade.
-          </p>
-<div class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center text-body-sm font-body-sm text-secondary gap-2">
-<span class="material-symbols-outlined text-base">check_circle</span>
-<span>Integração sustentável no mundo humano</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- EMENTA / CONTEÚDO PROGRAMÁTICO (Acordeão) -->
-<section class="w-full bg-surface-container-low py-16 px-6 sm:px-10 lg:px-margin border-t border-[#8C8A5B]/20" id="ementa">
-<div class="max-w-[1000px] mx-auto flex flex-col gap-10">
-<div class="flex flex-col items-center text-center gap-2">
-<span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
-          « GRADE TÉCNICA EMENTA »
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
-          Conteúdo Programático por Módulos
-        </h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
-          Estrutura construída para transformar conceitos teóricos em segurança de condução prática em situações reais.
-        </p>
-</div>
-<!-- Accordion Container -->
-<div class="flex flex-col gap-4">
-<!-- Módulo 01 -->
-<details class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden" open="">
-<summary class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
-<div class="flex items-center gap-4">
-<span class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">01</span>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary">
-                  Fundamentos da Comunicação Canina e Leitura Corporal
-                </h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Sinais de calma, tensão acumulada e limites saudáveis</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
-              expand_more
-            </span>
-</summary>
-<div class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
-<p>
-              Estudo da linguagem corporal e sinais sutis emitidos antes do descontrole reativo. Mapeamento de estresse crônico x agudo, regulação autonômica e como a energia e posicionamento do condutor influenciam o estado mental do cão.
-            </p>
-<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Leitura de microexpressões e posicionamento de orelhas e cauda</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Desconstrução da antropomorfização no manejo diário</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Postura e linguagem assertiva de condução</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Como estabelecer autoridade serena sem punição física</li>
-</ul>
-</div>
-</details>
-<!-- Módulo 02 -->
-<details class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden">
-<summary class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
-<div class="flex items-center gap-4">
-<span class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">02</span>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary">
-                  O Papel da Matilha e Equilíbrio de Temperamentos
-                </h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Convivência interespécie, neutralidade e respeito espacial</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
-              expand_more
-            </span>
-</summary>
-<div class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
-<p>
-              Entenda como a organização biológica de um grupo ensina autocontrole de forma mais rápida do que sessões individuais isoladas. Métodos para neutralizar cães hiperativos através do exemplo de cães equilibrados.
-            </p>
-<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Apresentações estruturadas entre cães desconhecidos</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Prevenção e mediação de disputas por recursos</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>O papel dos cães âncora no equilíbrio da matilha</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Desensibilização a outros animais sem interação forçada</li>
-</ul>
-</div>
-</details>
-<!-- Módulo 03 -->
-<details class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden">
-<summary class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
-<div class="flex items-center gap-4">
-<span class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">03</span>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary">
-                  Manejo de Guia, Passeios Estruturados e Estímulos Urbanos
-                </h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Conexão mecânica, firmeza suave e controle de distrações</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
-              expand_more
-            </span>
-</summary>
-<div class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
-<p>
-              Técnica correta de empunhadura e uso consciente de equipamentos de contenção. Transformação de caminhadas caóticas em rituais diários de conexão, calmaria e sincronia passo a passo.
-            </p>
-<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Ajuste e uso funcional de equipamentos de guia</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Neutralização de estímulos (motos, skates, pedestres)</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Paradas estruturadas e comandos de descompressão</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Construção de foco voluntário sem dependência de petisco constante</li>
-</ul>
-</div>
-</details>
-<!-- Módulo 04 -->
-<details class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden">
-<summary class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
-<div class="flex items-center gap-4">
-<span class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">04</span>
-<div>
-<h3 class="font-headline-sm text-headline-sm text-primary">
-                  Prática de Campo com Cães Reais e Resolução de Casos
-                </h3>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Supervisão clínica ao vivo com desafios comportamentais autênticos</span>
-</div>
-</div>
-<span class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
-              expand_more
-            </span>
-</summary>
-<div class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
-<p>
-              Aplicação direta em campo. Os alunos assumem a condução e resolução de situações atípicas sob supervisão presencial contínua, diagnosticando padrões em tempo real.
-            </p>
-<ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Condução guiada com cães de diferentes reatividades</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Feedback individual de postura, timing e pressão</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Plano de contingência para picos de excitação</li>
-<li class="flex items-center gap-2 text-on-surface"><span class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Roda de debriefing e diagnósticos comparados</li>
-</ul>
-</div>
-</details>
-</div>
-</div>
-</section>
-<!-- PARA QUEM É & O QUE VOCÊ LEVA -->
-<section class="w-full bg-primary-container text-inverse-on-surface py-20 px-6 sm:px-10 lg:px-margin">
-<div class="max-w-[1280px] mx-auto flex flex-col gap-14">
-<div class="flex flex-col items-center text-center gap-2 max-w-2xl mx-auto">
-<span class="font-badge-seal text-badge-seal text-tertiary-container uppercase tracking-wider">
-          « PERFIL E BENEFÍCIOS »
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-tight">
-          Para quem é o curso &amp; o que você leva
-        </h2>
-<p class="font-body-md text-body-md text-inverse-on-surface/80">
-          Um programa sem rodeios concebido para quem quer autonomia técnica, sem promessas milagrosas.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-<!-- Coluna 1: Para quem é -->
-<div class="bg-primary rounded-[20px] p-8 sm:p-10 border border-[#738B4D]/30 flex flex-col gap-6">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-[#738B4D] text-3xl">target</span>
-<h3 class="font-headline-md text-headline-md text-inverse-on-surface">
-              Para quem é o curso
-            </h3>
-</div>
-<div class="flex flex-col gap-4">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">check_circle</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Tutores dedicados</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que buscam autonomia completa, paz na rotina da casa e o fim de passeios exaustivos.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">check_circle</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Adestradores iniciantes e aspirantes</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que desejam compreender a mecânica real do manejo de matilhas antes de atuar no mercado.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">check_circle</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Monitores de creches e daycares</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que precisam de ferramentas preventivas de mediação para manter grupos grandes seguros e relaxados.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">check_circle</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Cuidadores e Dog Walkers profissionais</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que buscam autoridade imediata, segurança de condução e postura impecável em via pública.</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Coluna 2: O que você leva -->
-<div class="bg-primary rounded-[20px] p-8 sm:p-10 border border-[#738B4D]/30 flex flex-col gap-6">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-[#738B4D] text-3xl">verified</span>
-<h3 class="font-headline-md text-headline-md text-inverse-on-surface">
-              O que você leva
-            </h3>
-</div>
-<div class="flex flex-col gap-4">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">task_alt</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Segurança e clareza de intervenção</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Fim do receio diante de situações de estresse repentino, latidos ou encontros com outros animais.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">task_alt</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Certificado de Participação Jovem Matilha</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Chancela da Academia Canina atestando carga horária e imersão teórica e prática.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">task_alt</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Acesso ao Grupo Exclusivo de Acompanhamento</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Canal direto pós-curso com nossa comunidade para esclarecimento de dúvidas e estudo de novos casos.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">task_alt</span>
-<div>
-<strong class="text-inverse-on-surface font-semibold block">Prática supervisionada com Fábio Alexandre</strong>
-<p class="text-body-sm font-body-sm text-inverse-on-surface/75">Orientação individual in loco, correções imediatas de postura de guia e timing de correção.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- PROVA SOCIAL / DEPOIMENTOS -->
-<section class="w-full bg-surface-container-low py-20 px-6 sm:px-10 lg:px-margin">
-<div class="max-w-[1280px] mx-auto flex flex-col gap-12">
-<div class="flex flex-col items-center text-center gap-2">
-<span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
-          « EXPERIÊNCIA DE QUEM VIVEU »
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
-          Transformações na Prática
-        </h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
-          Relatos reais de guardiões e profissionais que mudaram definitivamente a relação com seus cães.
-        </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Depoimento 1 -->
-<div class="bg-surface-container-lowest p-8 rounded-[20px] border border-[#8C8A5B]/20 flex flex-col justify-between shadow-sm relative">
-<span class="font-display text-5xl text-[#738B4D] select-none leading-none mb-3">“</span>
-<p class="font-body-md text-body-md text-on-surface italic mb-6 leading-relaxed">
-            A Vivência mudou completamente nossos passeios. Entendi como o Thor precisava de liderança clara e não só de carinho desgovernado. O retorno da tranquilidade em casa não tem preço.
-          </p>
-<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
-<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-tertiary font-bold">
-              MC
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pilar 1 -->
+            <div
+              class="bg-surface-container-lowest rounded-[20px] p-8 flex flex-col gap-5 border border-[#8C8A5B]/20 hover:border-[#738B4D] transition-colors duration-200 shadow-sm">
+              <div
+                class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-[#738B4D]">
+                <span class="material-symbols-outlined text-3xl">psychology_alt</span>
+              </div>
+              <span class="font-label-eyebrow text-label-eyebrow text-tertiary uppercase tracking-wider">Pilar 01</span>
+              <h3 class="font-headline-md text-headline-md text-primary">
+                Comportamento &amp; Obediência Funcional
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Como ler os sinais sutis antes da reação indesejada e aplicar limites consistentes com clareza,
+                previsibilidade e firmeza sem violência.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center text-body-sm font-body-sm text-secondary gap-2">
+                <span class="material-symbols-outlined text-base">check_circle</span>
+                <span>Comunicação postural e microexpressões</span>
+              </div>
             </div>
-<div>
-<div class="font-headline-sm text-base text-primary">Mariana C.</div>
-<div class="font-body-sm text-xs text-on-surface-variant">Tutora do Thor (Pitbull)</div>
-</div>
-</div>
-</div>
-<!-- Depoimento 2 -->
-<div class="bg-surface-container-lowest p-8 rounded-[20px] border border-[#8C8A5B]/20 flex flex-col justify-between shadow-sm relative">
-<span class="font-display text-5xl text-[#738B4D] select-none leading-none mb-3">“</span>
-<p class="font-body-md text-body-md text-on-surface italic mb-6 leading-relaxed">
-            Ver a matilha funcionando sob o comando do Fábio é uma aula de etologia pura. Recomendo a todos os profissionais que trabalham com clínica ou reabilitação comportamental.
-          </p>
-<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
-<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-tertiary font-bold">
-              RS
+            <!-- Pilar 2 -->
+            <div
+              class="bg-surface-container-lowest rounded-[20px] p-8 flex flex-col gap-5 border border-[#8C8A5B]/20 hover:border-[#738B4D] transition-colors duration-200 shadow-sm">
+              <div
+                class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-[#738B4D]">
+                <span class="material-symbols-outlined text-3xl">groups_3</span>
+              </div>
+              <span class="font-label-eyebrow text-label-eyebrow text-tertiary uppercase tracking-wider">Pilar 02</span>
+              <h3 class="font-headline-md text-headline-md text-primary">
+                Convívio Real com Outros Cães
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Dinâmica da matilha sem brigas, moderação de energia e hierarquia natural. O cão aprende a coexistir
+                respeitando o espaço alheio.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center text-body-sm font-body-sm text-secondary gap-2">
+                <span class="material-symbols-outlined text-base">check_circle</span>
+                <span>Neutralidade e descompressão social</span>
+              </div>
             </div>
-<div>
-<div class="font-headline-sm text-base text-primary">Dr. Roberto S.</div>
-<div class="font-body-sm text-xs text-on-surface-variant">Médico Veterinário &amp; Tutor</div>
-</div>
-</div>
-</div>
-<!-- Depoimento 3 -->
-<div class="bg-surface-container-lowest p-8 rounded-[20px] border border-[#8C8A5B]/20 flex flex-col justify-between shadow-sm relative">
-<span class="font-display text-5xl text-[#738B4D] select-none leading-none mb-3">“</span>
-<p class="font-body-md text-body-md text-on-surface italic mb-6 leading-relaxed">
-            Hoje meus dois cães convivem em perfeita harmonia graças às técnicas práticas aprendidas no curso. Pararam as brigas na hora da ração e a ansiedade na chegada de visitas.
-          </p>
-<div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
-<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-tertiary font-bold">
-              CL
+            <!-- Pilar 3 -->
+            <div
+              class="bg-surface-container-lowest rounded-[20px] p-8 flex flex-col gap-5 border border-[#8C8A5B]/20 hover:border-[#738B4D] transition-colors duration-200 shadow-sm">
+              <div
+                class="w-14 h-14 rounded-xl bg-surface-container-high flex items-center justify-center text-[#738B4D]">
+                <span class="material-symbols-outlined text-3xl">directions_walk</span>
+              </div>
+              <span class="font-label-eyebrow text-label-eyebrow text-tertiary uppercase tracking-wider">Pilar 03</span>
+              <h3 class="font-headline-md text-headline-md text-primary">
+                Socialização Consciente com Humanos
+              </h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Segurança no convívio urbano, recepção de visitas em casa e passeios estruturados e tranquilos na rua
+                sem puxões ou reatividade.
+              </p>
+              <div
+                class="mt-auto pt-4 border-t border-outline-variant/30 flex items-center text-body-sm font-body-sm text-secondary gap-2">
+                <span class="material-symbols-outlined text-base">check_circle</span>
+                <span>Integração sustentável no mundo humano</span>
+              </div>
             </div>
-<div>
-<div class="font-headline-sm text-base text-primary">Camila L.</div>
-<div class="font-body-sm text-xs text-on-surface-variant">Tutora de 2 cães resgatados</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- QUEM MINISTRA O CURSO -->
-<section class="w-full bg-surface-container py-20 px-6 sm:px-10 lg:px-margin border-t border-[#8C8A5B]/20">
-<div class="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<!-- Foto de Fábio Alexandre -->
-<div class="lg:col-span-5 flex justify-center">
-<div class="relative w-full max-w-[380px] aspect-[4/5] rounded-[20px] border-[3px] border-[#738B4D] overflow-hidden shadow-xl bg-surface-container-highest">
-<img class="w-full h-full object-cover" data-alt="Retrato profissional de Fábio Alexandre, educador canino e fundador da Jovem Matilha, vestido em trajes de campo funcionais, demonstrando serenidade, postura confiante ao ar livre ao lado de um cão de porte imponente com luz natural matinal suave." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBktljpRNEQDpGMcBc6BD5uniWldjh2lptGdZ6nB-jzW3_9JI39ykAbLgjWCOdfFkyts8NOYCIFAoGW5dnZQ6wpjiCiezhOzOD4A0PrGHo3hCI2s0KmNemWTT3DWH5NCfrlZiJjaM7JST51H6v8a4r57cDu15EtmXL9Y6cEoonKuaG2Fa5uwuJTIsR-SNel7Fxq8Gq4ATn8Z3FSF6HK-DKZg-VJSrKRENFBRiHYVedYqqJieTQIGbtIw">
-<div class="absolute bottom-4 left-4 right-4 bg-primary-container/90 backdrop-blur-sm p-4 rounded-xl border border-[#738B4D]/30 text-inverse-on-surface">
-<span class="font-label-eyebrow text-label-eyebrow text-tertiary-container uppercase tracking-wider block">Instrutor Responsável</span>
-<span class="font-headline-sm text-headline-sm block">Fábio Alexandre</span>
-<span class="font-body-sm text-body-sm text-inverse-on-surface/70">Fundador da Jovem Matilha</span>
-</div>
-</div>
-</div>
-<!-- Bio / Apresentação -->
-<div class="lg:col-span-7 flex flex-col gap-6">
-<span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
-          « LIDERANÇA TÉCNICA »
-        </span>
-<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
-          Quem Ministra a Vivência
-        </h2>
-<div class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
-<p>
-            À frente da <strong>Jovem Matilha desde 2023</strong>, <strong>Fábio Alexandre</strong> especializou-se no estudo aprofundado do comportamento canino natural e na dinâmica de matilhas balanceadas. Sua metodologia parte da premissa de que cães não necessitam de coerção, mas sim de limites geométricos, previsibilidade e um condutor cuja calma inspire obediência espontânea.
-          </p>
-<p>
-            Com dezenas de casos resolvidos de reatividade severa, ansiedade de separação e insegurança crônica, Fábio conduz os alunos pela prática viva, desmistificando mitos modernos e entregando ferramentas que funcionam na rotina urbana do mundo real.
-          </p>
-</div>
-<div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/30 max-w-md">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary text-2xl">verified_user</span>
-<span class="font-body-sm text-body-sm text-on-surface font-medium">Método Baseado em Ciência</span>
-</div>
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary text-2xl">nature_people</span>
-<span class="font-body-sm text-body-sm text-on-surface font-medium">Condicionamento de Campo</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- BARRA FINAL / CTA DE INSCRIÇÃO -->
-<section class="w-full bg-primary-container text-inverse-on-surface py-20 px-6 sm:px-10 lg:px-margin border-t border-[#738B4D]/30 relative overflow-hidden" id="inscricao">
-<!-- Efeito decorativo sutil -->
-<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#738B4D]/10 blur-3xl pointer-events-none"></div>
-<div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none"></div>
-<div class="max-w-[800px] mx-auto flex flex-col items-center text-center gap-8 relative z-10">
-<!-- Selo Circular Jovem Matilha -->
-<img alt="Logo oficial da Jovem Matilha" class="w-32 rounded-lg bg-[#F2F2EB] p-1 shadow-xl" src="assets/logo-oficial.png">
-<div class="flex flex-col gap-3">
-<span class="font-badge-seal text-badge-seal text-tertiary-container uppercase tracking-wider">
-          « TURMAS REDUZIDAS PARA MÁXIMO APROVEITAMENTO »
-        </span>
-<h2 class="font-display text-headline-lg sm:text-display text-inverse-on-surface tracking-tight">
-          Garanta sua vaga na Vivência Jovem Matilha
-        </h2>
-<p class="font-body-lg text-body-lg text-inverse-on-surface/80 max-w-xl mx-auto">
-          As inscrições passam por uma breve análise de perfil para compatibilização de turmas e segurança das dinâmicas práticas com os animais.
-        </p>
-</div>
-<!-- Formulário / Ação de Inscrição Direta -->
-<div class="w-full max-w-md flex flex-col gap-4">
-<a class="w-full inline-flex items-center justify-center gap-3 bg-[#738B4D] hover:bg-secondary text-white font-headline-sm text-headline-sm font-bold px-10 py-5 rounded-xl shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5" href="https://wa.me/5511997800684?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20minha%20inscri%C3%A7%C3%A3o%20para%20o%20Curso%20Viv%C3%AAncia%20Jovem%20Matilha." rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-2xl">how_to_reg</span>
-<span>SOLICITAR INSCRIÇÃO / VAGA</span>
-</a>
-<div class="flex items-center justify-center gap-2 text-body-sm font-body-sm text-inverse-on-surface/60">
-<span class="material-symbols-outlined text-sm">lock</span>
-<span>Atendimento direto via equipe de coordenação técnica</span>
-</div>
-</div>
-<!-- Selo Circular Textual Final -->
-<div class="pt-6 border-t border-[#738B4D]/20 w-full flex items-center justify-center gap-4 text-badge-seal font-badge-seal text-tertiary-container">
+          </div>
+        </div>
+      </section>
+      <!-- EMENTA / CONTEÚDO PROGRAMÁTICO (Acordeão) -->
+      <section class="w-full bg-surface-container-low py-16 px-6 sm:px-10 lg:px-margin border-t border-[#8C8A5B]/20"
+        id="ementa">
+        <div class="max-w-[1000px] mx-auto flex flex-col gap-10">
+          <div class="flex flex-col items-center text-center gap-2">
+            <span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
+              GRADE TÉCNICA EMENTA
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Conteúdo Programático por Módulos
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-xl">
+              Estrutura construída para transformar conceitos teóricos em segurança de condução prática em situações
+              reais.
+            </p>
+          </div>
+          <!-- Accordion Container -->
+          <div class="flex flex-col gap-4">
+            <!-- Módulo 01 -->
+            <details class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden"
+              open="">
+              <summary
+                class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">01</span>
+                  <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary">
+                      Fundamentos da Comunicação Canina e Leitura Corporal
+                    </h3>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Sinais de calma, tensão acumulada e
+                      limites saudáveis</span>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
+                  expand_more
+                </span>
+              </summary>
+              <div
+                class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
+                <p>
+                  Estudo da linguagem corporal e sinais sutis emitidos antes do descontrole reativo. Mapeamento de
+                  estresse crônico x agudo, regulação autonômica e como a energia e posicionamento do condutor
+                  influenciam o estado mental do cão.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Leitura de microexpressões e posicionamento
+                    de orelhas e cauda</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Desconstrução da antropomorfização no manejo
+                    diário</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Postura e linguagem assertiva de condução
+                  </li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Como estabelecer autoridade serena sem
+                    punição física</li>
+                </ul>
+              </div>
+            </details>
+            <!-- Módulo 02 -->
+            <details
+              class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden">
+              <summary
+                class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">02</span>
+                  <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary">
+                      O Papel da Matilha e Equilíbrio de Temperamentos
+                    </h3>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Convivência interespécie,
+                      neutralidade e respeito espacial</span>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
+                  expand_more
+                </span>
+              </summary>
+              <div
+                class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
+                <p>
+                  Entenda como a organização biológica de um grupo ensina autocontrole de forma mais rápida do que
+                  sessões individuais isoladas. Métodos para neutralizar cães hiperativos através do exemplo de cães
+                  equilibrados.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Apresentações estruturadas entre cães
+                    desconhecidos</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Prevenção e mediação de disputas por recursos
+                  </li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>O papel dos cães âncora no equilíbrio da
+                    matilha</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Desensibilização a outros animais sem
+                    interação forçada</li>
+                </ul>
+              </div>
+            </details>
+            <!-- Módulo 03 -->
+            <details
+              class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden">
+              <summary
+                class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">03</span>
+                  <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary">
+                      Manejo de Guia, Passeios Estruturados e Estímulos Urbanos
+                    </h3>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Conexão mecânica, firmeza suave e
+                      controle de distrações</span>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
+                  expand_more
+                </span>
+              </summary>
+              <div
+                class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
+                <p>
+                  Técnica correta de empunhadura e uso consciente de equipamentos de contenção. Transformação de
+                  caminhadas caóticas em rituais diários de conexão, calmaria e sincronia passo a passo.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Ajuste e uso funcional de equipamentos de
+                    guia</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Neutralização de estímulos (motos, skates,
+                    pedestres)</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Paradas estruturadas e comandos de
+                    descompressão</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Construção de foco voluntário sem dependência
+                    de petisco constante</li>
+                </ul>
+              </div>
+            </details>
+            <!-- Módulo 04 -->
+            <details
+              class="group bg-surface-container-lowest rounded-[16px] border border-[#8C8A5B]/20 overflow-hidden">
+              <summary
+                class="flex items-center justify-between p-6 cursor-pointer select-none list-none group-hover:bg-surface-container-high/40 transition-colors">
+                <div class="flex items-center gap-4">
+                  <span
+                    class="font-headline-sm text-headline-sm text-tertiary bg-surface-container px-3 py-1.5 rounded-lg">04</span>
+                  <div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary">
+                      Prática de Campo com Cães Reais e Resolução de Casos
+                    </h3>
+                    <span class="font-body-sm text-body-sm text-on-surface-variant">Supervisão clínica ao vivo com
+                      desafios comportamentais autênticos</span>
+                  </div>
+                </div>
+                <span
+                  class="material-symbols-outlined text-secondary transition-transform duration-300 group-open:rotate-180">
+                  expand_more
+                </span>
+              </summary>
+              <div
+                class="p-6 pt-2 text-on-surface-variant font-body-md text-body-md border-t border-outline-variant/20 flex flex-col gap-3">
+                <p>
+                  Aplicação direta em campo. Os alunos assumem a condução e resolução de situações atípicas sob
+                  supervisão presencial contínua, diagnosticando padrões em tempo real.
+                </p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2 text-body-sm">
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Condução guiada com cães de diferentes
+                    reatividades</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Feedback individual de postura, timing e
+                    pressão</li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Plano de contingência para picos de excitação
+                  </li>
+                  <li class="flex items-center gap-2 text-on-surface"><span
+                      class="w-1.5 h-1.5 rounded-full bg-[#738B4D]"></span>Roda de debriefing e diagnósticos comparados
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+      <!-- PARA QUEM É & O QUE VOCÊ LEVA -->
+      <section class="w-full bg-primary-container text-inverse-on-surface py-20 px-6 sm:px-10 lg:px-margin">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-14">
+          <div class="flex flex-col items-center text-center gap-2 max-w-2xl mx-auto">
+            <span class="font-badge-seal text-badge-seal text-tertiary-container uppercase tracking-wider">
+              PERFIL E BENEFÍCIOS
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-tight">
+              Para quem é o curso &amp; o que você leva
+            </h2>
+            <p class="font-body-md text-body-md text-inverse-on-surface/80">
+              Um programa sem rodeios concebido para quem quer autonomia técnica, sem promessas milagrosas.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <!-- Coluna 1: Para quem é -->
+            <div class="bg-primary rounded-[20px] p-8 sm:p-10 border border-[#738B4D]/30 flex flex-col gap-6">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#738B4D] text-3xl">target</span>
+                <h3 class="font-headline-md text-headline-md text-inverse-on-surface">
+                  Para quem é o curso
+                </h3>
+              </div>
+              <div class="flex flex-col gap-4">
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Tutores dedicados</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que buscam autonomia completa, paz
+                      na rotina da casa e o fim de passeios exaustivos.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Adestradores iniciantes e
+                      aspirantes</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que desejam compreender a mecânica
+                      real do manejo de matilhas antes de atuar no mercado.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Monitores de creches e daycares</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que precisam de ferramentas
+                      preventivas de mediação para manter grupos grandes seguros e relaxados.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Cuidadores e Dog Walkers
+                      profissionais</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Que buscam autoridade imediata,
+                      segurança de condução e postura impecável em via pública.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Coluna 2: O que você leva -->
+            <div class="bg-primary rounded-[20px] p-8 sm:p-10 border border-[#738B4D]/30 flex flex-col gap-6">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-[#738B4D] text-3xl">verified</span>
+                <h3 class="font-headline-md text-headline-md text-inverse-on-surface">
+                  O que você leva
+                </h3>
+              </div>
+              <div class="flex flex-col gap-4">
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Segurança e clareza de
+                      intervenção</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Fim do receio diante de situações de
+                      estresse repentino, latidos ou encontros com outros animais.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Certificado de Participação Jovem
+                      Matilha</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Chancela da Academia Canina
+                      atestando carga horária e imersão teórica e prática.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Acesso ao Grupo Exclusivo de
+                      Acompanhamento</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Canal direto pós-curso com nossa
+                      comunidade para esclarecimento de dúvidas e estudo de novos casos.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <span class="material-symbols-outlined text-[#738B4D] text-2xl mt-0.5">pets</span>
+                  <div>
+                    <strong class="text-inverse-on-surface font-semibold block">Prática supervisionada com Fábio
+                      Alexandre</strong>
+                    <p class="text-body-sm font-body-sm text-inverse-on-surface/75">Orientação individual in loco,
+                      correções imediatas de postura de guia e timing de correção.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROVA SOCIAL / DEPOIMENTOS -->
+      <section class="w-full bg-surface-container-low py-20 px-6 sm:px-10 lg:px-margin">
+        <div class="max-w-[1280px] mx-auto flex flex-col gap-12">
+          <div class="flex flex-col items-center text-center gap-2">
+            <span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
+              EXPERIÊNCIA DE QUEM VIVEU
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Transformações na Prática
+            </h2>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+              Relatos reais de guardiões e profissionais que mudaram definitivamente a relação com seus cães.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Depoimento 1 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-[20px] border border-[#8C8A5B]/20 flex flex-col justify-between shadow-sm relative">
+              <span class="font-display text-5xl text-[#738B4D] select-none leading-none mb-3">“</span>
+              <p class="font-body-md text-body-md text-on-surface italic mb-6 leading-relaxed">
+                A Vivência mudou completamente nossos passeios. Entendi como o Thor precisava de liderança clara e não
+                só de carinho desgovernado. O retorno da tranquilidade em casa não tem preço.
+              </p>
+              <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-tertiary font-bold">
+                  MC
+                </div>
+                <div>
+                  <div class="font-headline-sm text-base text-primary">Mariana C.</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant">Tutora do Thor (Pitbull)</div>
+                </div>
+              </div>
+            </div>
+            <!-- Depoimento 2 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-[20px] border border-[#8C8A5B]/20 flex flex-col justify-between shadow-sm relative">
+              <span class="font-display text-5xl text-[#738B4D] select-none leading-none mb-3">“</span>
+              <p class="font-body-md text-body-md text-on-surface italic mb-6 leading-relaxed">
+                Ver a matilha funcionando sob o comando do Fábio é uma aula de etologia pura. Recomendo a todos os
+                profissionais que trabalham com clínica ou reabilitação comportamental.
+              </p>
+              <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-tertiary font-bold">
+                  RS
+                </div>
+                <div>
+                  <div class="font-headline-sm text-base text-primary">Dr. Roberto S.</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant">Médico Veterinário &amp; Tutor</div>
+                </div>
+              </div>
+            </div>
+            <!-- Depoimento 3 -->
+            <div
+              class="bg-surface-container-lowest p-8 rounded-[20px] border border-[#8C8A5B]/20 flex flex-col justify-between shadow-sm relative">
+              <span class="font-display text-5xl text-[#738B4D] select-none leading-none mb-3">“</span>
+              <p class="font-body-md text-body-md text-on-surface italic mb-6 leading-relaxed">
+                Hoje meus dois cães convivem em perfeita harmonia graças às técnicas práticas aprendidas no curso.
+                Pararam as brigas na hora da ração e a ansiedade na chegada de visitas.
+              </p>
+              <div class="flex items-center gap-4 pt-4 border-t border-outline-variant/30">
+                <div
+                  class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center font-headline-sm text-tertiary font-bold">
+                  CL
+                </div>
+                <div>
+                  <div class="font-headline-sm text-base text-primary">Camila L.</div>
+                  <div class="font-body-sm text-xs text-on-surface-variant">Tutora de 2 cães resgatados</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- QUEM MINISTRA O CURSO -->
+      <section class="w-full bg-surface-container py-20 px-6 sm:px-10 lg:px-margin border-t border-[#8C8A5B]/20">
+        <div class="max-w-[1100px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Foto de Fábio Alexandre -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div
+              class="relative w-full max-w-[380px] aspect-[4/5] rounded-[20px] border-[3px] border-[#738B4D] overflow-hidden shadow-xl bg-surface-container-highest">
+              <img class="w-full h-full object-cover"
+                data-alt="Retrato profissional de Fábio Alexandre, educador canino e fundador da Jovem Matilha, vestido em trajes de campo funcionais, demonstrando serenidade, postura confiante ao ar livre ao lado de um cão de porte imponente com luz natural matinal suave."
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBktljpRNEQDpGMcBc6BD5uniWldjh2lptGdZ6nB-jzW3_9JI39ykAbLgjWCOdfFkyts8NOYCIFAoGW5dnZQ6wpjiCiezhOzOD4A0PrGHo3hCI2s0KmNemWTT3DWH5NCfrlZiJjaM7JST51H6v8a4r57cDu15EtmXL9Y6cEoonKuaG2Fa5uwuJTIsR-SNel7Fxq8Gq4ATn8Z3FSF6HK-DKZg-VJSrKRENFBRiHYVedYqqJieTQIGbtIw">
+              <div
+                class="absolute bottom-4 left-4 right-4 bg-primary-container/90 backdrop-blur-sm p-4 rounded-xl border border-[#738B4D]/30 text-inverse-on-surface">
+                <span
+                  class="font-label-eyebrow text-label-eyebrow text-tertiary-container uppercase tracking-wider block">Instrutor
+                  Responsável</span>
+                <span class="font-headline-sm text-headline-sm block">Fábio Alexandre</span>
+                <span class="font-body-sm text-body-sm text-inverse-on-surface/70">Fundador da Jovem Matilha</span>
+              </div>
+            </div>
+          </div>
+          <!-- Bio / Apresentação -->
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <span class="font-badge-seal text-badge-seal text-tertiary uppercase tracking-wider">
+               LIDERANÇA TÉCNICA 
+            </span>
+            <h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+              Quem Ministra a Vivência
+            </h2>
+            <div class="flex flex-col gap-4 font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              <p>
+                À frente da <strong>Jovem Matilha desde 2023</strong>, <strong>Fábio Alexandre</strong> especializou-se
+                no estudo aprofundado do comportamento canino natural e na dinâmica de matilhas balanceadas. Sua
+                metodologia parte da premissa de que cães não necessitam de coerção, mas sim de limites geométricos,
+                previsibilidade e um condutor cuja calma inspire obediência espontânea.
+              </p>
+              <p>
+                Com dezenas de casos resolvidos de reatividade severa, ansiedade de separação e insegurança crônica,
+                Fábio conduz os alunos pela prática viva, desmistificando mitos modernos e entregando ferramentas que
+                funcionam na rotina urbana do mundo real.
+              </p>
+            </div>
+            <div class="grid grid-cols-2 gap-4 pt-4 border-t border-outline-variant/30 max-w-md">
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-2xl">verified_user</span>
+                <span class="font-body-sm text-body-sm text-on-surface font-medium">Método Baseado em Ciência</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary text-2xl">nature_people</span>
+                <span class="font-body-sm text-body-sm text-on-surface font-medium">Condicionamento de Campo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- BARRA FINAL / CTA DE INSCRIÇÃO -->
+      <section
+        class="w-full bg-primary-container text-inverse-on-surface py-20 px-6 sm:px-10 lg:px-margin border-t border-[#738B4D]/30 relative overflow-hidden"
+        id="inscricao">
+        <!-- Efeito decorativo sutil -->
+        <div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-[#738B4D]/10 blur-3xl pointer-events-none">
+        </div>
+        <div class="absolute -right-20 -top-20 w-80 h-80 rounded-full bg-tertiary/10 blur-3xl pointer-events-none">
+        </div>
+        <div class="max-w-[800px] mx-auto flex flex-col items-center text-center gap-8 relative z-10">
+          <!-- Selo Circular Jovem Matilha -->
+          <img alt="Logo oficial da Jovem Matilha" class="w-32 rounded-lg bg-[#F2F2EB] p-1 shadow-xl"
+            src="assets/logo-oficial.png">
+          <div class="flex flex-col gap-3">
+            <span class="font-badge-seal text-badge-seal text-tertiary-container uppercase tracking-wider">
+               TURMAS REDUZIDAS PARA MÁXIMO APROVEITAMENTO 
+            </span>
+            <h2 class="font-display text-headline-lg sm:text-display text-inverse-on-surface tracking-tight">
+              Garanta sua vaga na Vivência Jovem Matilha
+            </h2>
+            <p class="font-body-lg text-body-lg text-inverse-on-surface/80 max-w-xl mx-auto">
+              As inscrições passam por uma breve análise de perfil para compatibilização de turmas e segurança das
+              dinâmicas práticas com os animais.
+            </p>
+          </div>
+          <!-- Formulário / Ação de Inscrição Direta -->
+          <div class="w-full max-w-md flex flex-col gap-4">
+            <a class="w-full inline-flex items-center justify-center gap-3 bg-[#738B4D] hover:bg-secondary text-white font-headline-sm text-headline-sm font-bold px-10 py-5 rounded-xl shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
+              href="https://wa.me/5511997800684?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20minha%20inscri%C3%A7%C3%A3o%20para%20o%20Curso%20Viv%C3%AAncia%20Jovem%20Matilha."
+              rel="noopener noreferrer" target="_blank">
+              <span class="material-symbols-outlined text-2xl">how_to_reg</span>
+              <span>SOLICITAR INSCRIÇÃO / VAGA</span>
+            </a>
+            <div class="flex items-center justify-center gap-2 text-body-sm font-body-sm text-inverse-on-surface/60">
+              <span class="material-symbols-outlined text-sm">lock</span>
+              <span>Atendimento direto via equipe de coordenação técnica</span>
+            </div>
+          </div>
+          <!-- Selo Circular Textual Final -->
+          <div
+            class="pt-6 border-t border-[#738B4D]/20 w-full flex items-center justify-center gap-4 text-badge-seal font-badge-seal text-tertiary-container">
 
-<span class="text-inverse-on-surface tracking-widest uppercase">Jovem Matilha · Academia Canina</span>
+            <span class="text-inverse-on-surface tracking-widest uppercase">Jovem Matilha · Academia Canina</span>
 
-</div>
-</div>
-</section>
-</div></main><footer class="w-full bg-primary-container text-inverse-on-surface pt-space-2xl pb-space-xl"><div class="max-w-[1280px] mx-auto px-space-md lg:px-margin flex flex-col gap-space-2xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl items-start"><div class="md:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs font-badge-seal text-badge-seal text-tertiary-container uppercase tracking-wider"><span class="text-inverse-on-surface font-semibold">JOVEM MATILHA</span></div><div class="flex items-center gap-space-sm"><img alt="Logo oficial da Jovem Matilha" class="w-10 h-10 rounded-lg bg-[#F2F2EB] p-0.5 object-contain" src="assets/logo-oficial.png"><div><div class="font-headline-sm text-headline-sm text-inverse-on-surface leading-tight">ESTD · 2023</div><div class="font-label-eyebrow text-label-eyebrow text-outline-variant uppercase">Centro de Condicionamento</div></div></div><p class="font-body-sm text-body-sm text-inverse-on-surface/80 max-w-sm">Desenvolvimento cognitivo canino, equilíbrio socioambiental e reabilitação de comportamento com rigor técnico, presença e método baseado em ciência.</p></div><div class="md:col-span-3 flex flex-col gap-space-md"><span class="font-label-eyebrow text-label-eyebrow uppercase text-tertiary-container tracking-widest">Navegação</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-inverse-on-surface/80"><li class="hover:text-secondary-fixed transition-colors"><a data-path="home" href="index.html">Início Institucional</a></li><li class="hover:text-secondary-fixed transition-colors"><a data-path="servicos" href="serviços.html">Diagnóstico &amp; Serviços</a></li><li class="hover:text-secondary-fixed transition-colors"><a data-path="treinamento" href="treinamento.html">Protocolos de Treinamento</a></li><li class="hover:text-secondary-fixed transition-colors"><a data-path="curso-vivencia" href="curso.html">Vivência em Matilha</a></li><li class="hover:text-secondary-fixed transition-colors"><a data-path="agendar-avaliacao" href="serviços.html#formulario-avaliacao">Agendar Avaliação Inicial</a></li></ul></div><div class="md:col-span-5 flex flex-col gap-space-md"><span class="font-label-eyebrow text-label-eyebrow uppercase text-tertiary-container tracking-widest">Comunicação &amp; Atendimento</span><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-inverse-on-surface/80"><div class="flex items-center gap-space-xs"><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/whatsapp-futter.png"><span>(11) 98765-4321</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-lg">mail</span><span>contato@jovemmatilha.com.br</span></div><div class="flex items-center gap-space-xs"><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/instagram.png"><span>Instagram: @jovemmatilha</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-lg">schedule</span><span>Atendimento: Seg à Sáb · 07:30 - 18:30</span></div></div></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg text-body-sm font-body-sm text-inverse-on-surface/60"><p>© Jovem Matilha · ESTD 2023 · Escola Comportamental de Cães</p><div class="flex items-center gap-space-md"><span class="font-label-eyebrow text-label-eyebrow uppercase tracking-wider text-outline-variant">Ciência · Presença · Matilha</span></div></div></div></footer><a aria-label="Fale conosco via WhatsApp" class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-secondary text-on-secondary shadow-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all group" href="https://wa.me/5511997800684?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Jovem%20Matilha%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." rel="noopener noreferrer" target="_blank"><span class="absolute -inset-1 rounded-full bg-secondary/30 animate-ping group-hover:hidden"></span><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/whatsapp-futter.png"></a></body></html>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="w-full bg-primary-container text-inverse-on-surface pt-space-2xl pb-space-xl">
+    <div class="max-w-[1280px] mx-auto px-space-md lg:px-margin flex flex-col gap-space-2xl">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-space-xl items-start">
+        <div class="md:col-span-4 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm"><img alt="Logo oficial da Jovem Matilha"
+              class="w-10 h-10 rounded-lg bg-[#F2F2EB] p-0.5 object-contain" src="assets/logo-oficial.png">
+            <div>
+              <div class="font-headline-sm text-headline-sm text-inverse-on-surface leading-tight">Jovem Matilha</div>
+              <div class="font-label-eyebrow text-label-eyebrow text-outline-variant uppercase">Centro de
+                Condicionamento</div>
+            </div>
+          </div>
+          <p class="font-body-sm text-body-sm text-inverse-on-surface/80 max-w-sm">Desenvolvimento cognitivo canino,
+            equilíbrio socioambiental e reabilitação de comportamento com rigor técnico, presença e método baseado em
+            ciência.</p>
+        </div>
+        <div class="md:col-span-3 flex flex-col gap-space-md"><span
+            class="font-label-eyebrow text-label-eyebrow uppercase text-tertiary-container tracking-widest">Navegação</span>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-inverse-on-surface/80">
+            <li class="hover:text-secondary-fixed transition-colors"><a data-path="home" href="index.html">Início
+                Institucional</a></li>
+            <li class="hover:text-secondary-fixed transition-colors"><a data-path="servicos"
+                href="serviços.html">Diagnóstico &amp; Serviços</a></li>
+            <li class="hover:text-secondary-fixed transition-colors"><a data-path="treinamento"
+                href="treinamento.html">Protocolos de Treinamento</a></li>
+            <li class="hover:text-secondary-fixed transition-colors"><a data-path="curso-vivencia"
+                href="curso.html">Vivência em Matilha</a></li>
+            <li class="hover:text-secondary-fixed transition-colors"><a data-path="agendar-avaliacao"
+                href="serviços.html#formulario-avaliacao">Agendar Avaliação Inicial</a></li>
+          </ul>
+        </div>
+        <div class="md:col-span-5 flex flex-col gap-space-md"><span
+            class="font-label-eyebrow text-label-eyebrow uppercase text-tertiary-container tracking-widest">Comunicação
+            &amp; Atendimento</span>
+          <div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-inverse-on-surface/80">
+            <div class="flex items-center gap-space-xs"><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/whatsapp-futter.png"><span>(11) 98765-4321</span></div>
+            <div class="flex items-center gap-space-xs"><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/email.png"><span>contato@jovemmatilha.com.br</span></div>
+            <div class="flex items-center gap-space-xs"><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/instagram.png"><span>@jovemmatilha</span></div>
+            <div class="flex items-center gap-space-xs"><img alt="" aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/calendario.png"><span>Seg à Sáb · 07:30 - 18:30</span></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg text-body-sm font-body-sm text-inverse-on-surface/60">
+        <p>© Jovem Matilha · Escola Comportamental de Cães</p>
+        <div class="flex items-center gap-space-md"><span
+            class="font-label-eyebrow text-label-eyebrow uppercase tracking-wider text-outline-variant">Ciência ·
+            Presença · Matilha</span></div>
+      </div>
+    </div>
+  </footer><a aria-label="Fale conosco via WhatsApp"
+    class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-secondary text-on-secondary shadow-lg hover:bg-secondary-container hover:text-on-secondary-container transition-all group"
+    href="https://wa.me/5511997800684?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Jovem%20Matilha%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+    rel="noopener noreferrer" target="_blank"><span
+      class="absolute -inset-1 rounded-full bg-secondary/30 animate-ping group-hover:hidden"></span><img alt=""
+      aria-hidden="true" class="relative z-10 w-8 h-8 object-contain" src="assets/whatsapp-futter.png"></a>
+</body>
+
+</html>
