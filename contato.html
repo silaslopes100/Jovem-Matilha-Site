@@ -238,6 +238,15 @@
                       class="material-symbols-outlined absolute left-3.5 top-3.5 text-on-surface-variant text-xl">mail</span>
                   </div>
                 </div>
+                <div class="flex flex-col gap-2">
+                  <label
+                    class="font-label-eyebrow text-label-eyebrow uppercase text-tertiary font-semibold tracking-wider"
+                    for="tutor-address">Endereço</label>
+                  <input
+                    class="w-full bg-surface-container-low rounded-xl px-4 py-3.5 text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-secondary transition-all"
+                    id="tutor-address" autocomplete="street-address"
+                    placeholder="Rua, número, bairro, cidade - UF" type="text">
+                </div>
                 <!-- Dog Bio Details -->
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
                   <div class="flex flex-col gap-2 sm:col-span-1">
@@ -521,6 +530,7 @@
           `*Nome*: ${value('tutor-name')}`,
           `*WhatsApp*: ${value('tutor-whatsapp')}`,
           `*E-mail*: ${value('tutor-email')}`,
+          `*Endereço*: ${value('tutor-address') || 'Não informado'}`,
           '',
           '*DADOS DO PET*',
           `*Nome*: ${value('dog-name')}`,
